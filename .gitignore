@@ -8,3 +8,4 @@ DerivedData/
 *.doccarchive
 .docc-build
 docc
+*.symbols.json

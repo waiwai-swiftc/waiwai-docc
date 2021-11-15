@@ -1,23 +1,13 @@
 TARGET=WaiwaiKit
 
-archive:
+archive: symbol-graph
 	$(DOCC) convert Sources/$(TARGET) \
-	  --fallback-display-name $(TARGET) \
-	  --fallback-bundle-identifier me.giginet.WaiwaiKit \
-	  --fallback-bundle-version 1.0.0 \
-	  --additional-symbol-graph-dir .build/symbol-graphs \
 		--output-path $(TARGET).doccarchive
 
-preview:
-	$(DOCC) preview Sources/$(TARGET) \
-	  --fallback-display-name $(TARGET) \
-	  --fallback-bundle-identifier me.giginet.WaiwaiKit \
-	  --fallback-bundle-version 1.0.0 \
-	  --additional-symbol-graph-dir .build/symbol-graphs
+preview: symbol-graph
+	$(DOCC) preview Sources/$(TARGET)
 
 symbol-graph:
-	mkdir -p .build/symbol-graphs
 	swift build --target $(TARGET) \
 		-Xswiftc -emit-symbol-graph \
-		-Xswiftc -emit-symbol-graph-dir -Xswiftc .build/symbol-graphs
-
+		-Xswiftc -emit-symbol-graph-dir -Xswiftc Sources/WaiwaiKit/WaiwaiKit.docc
