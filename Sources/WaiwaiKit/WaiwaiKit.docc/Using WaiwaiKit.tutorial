@@ -1,0 +1,38 @@
+@Tutorial(time: 1) {
+    @Intro(title: "Using WaiwaiKit") {
+        WaiwaiKitを使ってみましょう
+        
+        @Image(source: "logo.png", alt: "cool logo")
+    }
+    
+    @Section(title: "Tutorial") {
+        @ContentAndMedia {
+            WaiwaiKitを使って過去のイベントを取得する
+        }
+        
+        @Steps {
+            @Step {
+                Hi! I'm giginet!
+                
+                こんにちは
+                
+                @Image(source: "giginet.png", alt: "cute cat!")
+            }
+            
+            @Comment {
+                コメント
+            } 
+            
+            @Step {
+                イベントを取得してみましょう
+                
+                @Code(name: "GetPreviousEvent.swift", file: tutorial0.swift) {
+                }
+            }
+            
+            @Step {
+                できた
+            }
+        }
+    }
+}

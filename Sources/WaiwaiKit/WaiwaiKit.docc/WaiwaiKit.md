@@ -11,3 +11,7 @@ This is so cool logo.
 This is so cute cat.
 
 ![cute cat](giginet.png)
+
+This is an awesome tutorial!
+
+- <doc:/tutorials/WaiwaiKit>

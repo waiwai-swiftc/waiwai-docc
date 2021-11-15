@@ -1,0 +1,13 @@
+@Tutorials(name: "WaiwaiKit") {
+    @Intro(title: "Meet WaiwaiKit") {
+        Learn how to work swift-docc
+        
+        @Image(source: "logo.png", alt: "So cool logo!")
+    }
+    
+    @Chapter(name: "WaiwaiKit Essentials") {
+        WaiwaiKitの基本的な使い方を学びましょう
+        
+        @TutorialReference(tutorial: "doc:Using-WaiwaiKit")
+    }
+}
