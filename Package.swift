@@ -13,8 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        // .package(url: "https://github.com/apple/swift-docc.git",
-                    // .revision("bf9bdfb0abc6c6f74b5ed897d67e3e8b39e8395b")),
+        .package(url: "https://github.com/apple/swift-docc.git", .revision("8a61eef586f9a5f8ba636dafeb2c515b1c1d65db")),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
